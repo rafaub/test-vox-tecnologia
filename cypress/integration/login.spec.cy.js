@@ -10,22 +10,23 @@ class LoginPage {
   }
 
   password(password) {
-
     if (password) {
       return cy.get('[data-test="password"]').type(password)
     }
-  
   }
 
   submit() {
     return cy.get('#login-button').click()
   }
 
+  labelTextError() {
+   return cy.get('[data-test="error"]')
+  }
+
   login(username, password) {
     this.username(username)
     this.password(password)
     this.submit()
-
   }
 }
 
