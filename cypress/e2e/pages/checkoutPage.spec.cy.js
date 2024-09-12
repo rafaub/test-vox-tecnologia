@@ -8,12 +8,12 @@ describe('Checkout test', function () {
         LoginPage.visit()
         LoginPage.login(Cypress.env('standard-user-name'), Cypress.env('password-user'))
 
-         //produtos adicionadods 
-         ProductPage.addProductToCart(1)
-         ProductPage.addProductToCart(2)
- 
-         //acessa o carrinho
-         ProductPage.buttonCart(1)
+        //produtos adicionadods 
+        ProductPage.addProductToCart(1)
+        ProductPage.addProductToCart(2)
+
+        //acessa o carrinho
+        ProductPage.buttonCart(1)
     })
 
     it('Finalize purchase', function () {

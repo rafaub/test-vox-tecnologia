@@ -3,7 +3,6 @@ import ProductPage from '../../integration/products.spec.cy'
 
 
 describe('Test cart', function () {
-
     it('User adds a product to the cart and a product to the cart', function () {
         LoginPage.visit()
         LoginPage.login(Cypress.env('standard-user-name'), Cypress.env('password-user'))
