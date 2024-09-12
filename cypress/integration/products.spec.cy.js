@@ -17,7 +17,7 @@ class ProductPage {
   }
 
   labelLayersCounter() {
-   return  cy.get('.fa-layers-counter')
+    return cy.get('.fa-layers-counter')
   }
 
   buttonCart() {

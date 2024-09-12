@@ -9,16 +9,16 @@ class CheckoutPage {
     }
 
     input(id, text) {
-      return  cy.get(`[data-test=${id}]`).type(text)
+        return cy.get(`[data-test=${id}]`).type(text)
     }
-  
-  
+
+
 
     labelSuccessFinallyOrder() {
         cy.get('.complete-header').should('contain', 'THANK YOU FOR YOUR ORDER')
     }
-  
-  
-  }
-  
-  export default new CheckoutPage()
+
+
+}
+
+export default new CheckoutPage()
